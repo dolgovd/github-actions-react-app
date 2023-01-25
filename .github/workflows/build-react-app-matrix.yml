@@ -1,8 +1,8 @@
-name: Build React App
-on:
-  push:
-    branches:
-      - 'master'
+name: Build React App Matrix
+on: workflow_dispatch
+  # push:
+  #   branches:
+  #     - 'master'
     # paths-ignore:
     #   - '.github/workflows/*'
 
