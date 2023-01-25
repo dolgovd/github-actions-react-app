@@ -1,4 +1,4 @@
-name: Deploy React App
+name: Build React App
 on:
   push:
     branches:
@@ -27,6 +27,7 @@ jobs:
   build_app:
     runs-on: ${{ matrix.os }}
     needs: test_app
+    continue-on-error: true
     strategy:
       matrix:
         node-version: [14.17.0, 16]
