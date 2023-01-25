@@ -1,5 +1,6 @@
 name: Build React App Artifacts
-on: workflow_dispatch
+# on: workflow_dispatch
+on: push
 jobs:
   build_app:
     runs-on: ubuntu-latest
