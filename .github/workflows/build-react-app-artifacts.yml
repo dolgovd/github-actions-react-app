@@ -16,3 +16,12 @@ jobs:
         with:
           name: ReactApp
           path: build
+  
+  grab_artifacts:
+    needs: build_app
+      runs-on: ubuntu-latest
+      steps:
+        - name: Fetch artifacts
+          run: actions/download-artifact@v3
+          with:
+            name: ReactApp
