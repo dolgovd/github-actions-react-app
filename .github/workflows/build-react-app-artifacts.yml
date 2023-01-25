@@ -22,6 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetch artifacts
-        run: actions/download-artifact@v3
+        uses: actions/download-artifact@v3
         with:
           name: ReactApp
